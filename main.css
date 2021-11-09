@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 1rem 1rem 0 0;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  width: 100%;
+}
+.calculate {
+  color: hsl(183, 100%, 15%);
+  font-weight: 400;
+}
+
+.input {
+  margin: 1rem 0;
+}
+.people {
+  display: flex;
+  flex-wrap: wrap;
+}
+.warning {
+  margin-left: auto;
+  color: red;
+  display: none;
+}
+.borderColor {
+  border: 1px solid red;
+}
+.active {
+  display: block;
+}
+.input div {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.3rem 0.5rem;
+  background-color: hsl(189, 41%, 97%);
+  cursor: pointer;
+  width: 100%;
+}
+
+.input div input {
+  width: 95%;
+  direction: rtl;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+.input div input::placeholder {
+  text-align: right;
+  color: #9ebbbd;
+  opacity: 0.5;
+}
+.input div:hover {
+  border: 1px solid hsl(172, 67%, 45%);
+}
+#tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+#tips input {
+  width: 8rem;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.givenTip {
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+}
+.givenTip:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+#tips input.custom {
+  font-size: 1.4rem;
+  padding: 0.5rem 0.5rem;
+  direction: rtl;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+#tips input.custom:hover {
+  border: 1px solid hsl(172, 67%, 45%);
+}
+#tips input.custom::placeholder {
+  opacity: 0.6;
+  color: hsl(183, 100%, 15%);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(183, 89%, 18%);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.result div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.result div p.calcTip {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  color: hsl(172, 67%, 45%);
+}
+
+.result div p span.amount {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+span.perPerson {
+  color: #9ebbbd;
+}
+
+.reset {
+  padding: 0.5rem 2rem;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 89%, 18%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin: 2rem 0 1rem 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: hsl(172, 84%, 65%);
+}
+.colorTip {
+  background-color: hsl(172, 67%, 45%);
+}
+@media all and (min-width: 660px) {
+  body {
+    padding-top: 5rem;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    width: 95%;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+  }
+  .calculate {
+    width: 45%;
+  }
+  .result {
+    width: 40%;
+  }
+  .reset {
+    margin-top: auto;
+  }
+}
+@media all and (min-width: 1200px) {
+  main {
+    width: 70%;
+  }
+}
+@media all and (min-width: 1440px) {
+  main {
+    width: 70%;
+  }
+}
