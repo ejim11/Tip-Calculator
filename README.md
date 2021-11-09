@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![](images/screenshot.jpg)
-![](images/screenshot1.jpg)
+
 
 ### Links
 
@@ -59,7 +59,7 @@ I learnt a lot about event delegation and the event object in javascript
 ``` -->
 
 ```js
-ips.addEventListener(
+Tips.addEventListener(
   // adding event listerner to the tips containing all input. this technique makes use of event delegation
   "click",
   function (e) {
